@@ -1,0 +1,101 @@
+ body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    html{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+       
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        
+        background: cyan;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        flex-direction:column;
+    }
+     .swiper-slide:nth-child(1){
+        background: url(../images/bg7.jpg) no-repeat center center;
+        background-size: cover;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        color:#fff;
+        font-size:30px;
+     }
+     .swiper-slide:nth-of-type(2){
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+     }
+      .swiper-slide:nth-child(2)>.anis{
+        color:#fff;
+        width: 100%;
+        height: 10%;
+        margin:0;
+        flex-direction:column;
+     
+        padding:0px;
+        
+         
+
+     }
+    
+   
+    .swiper-slide:nth-child(3)>.ani{
+        
+        width:100%;
+        height:100%;
+     }
+
+     .swiper-slide:nth-child(3){
+        position:relative;
+     }
+        
+
+
+
+     #enter{
+        position:absolute;
+        left: 25%;
+        bottom: 35%;
+        width:50%;
+        height:5%;
+        background:#5BE060;
+        border:0;
+
+     }
+    /* .box{
+        position:absolute;
+        margin-bottom:20px
+    } */
+    .box img{
+        display: inline-block; 
+
+    }
