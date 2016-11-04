@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>个人简历</title>
+    <meta name="viewport" content="initial-scale=1">
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+</head>
+
+<body>
+    <span id="preload"><canvas class="process" width="52px" height="52px">0%</canvas></span>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <canvas class="process" width="52px" height="52px">0%</canvas> 
+                <p class="ani"><img src="images/work.gif" style="width: 100%;"></p>
+                <p class="ani ani1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s" style="display:none">个</p>
+                <p class="ani ani1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0s" style="display:none">人</p>
+                <p class="ani ani1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="0s" style="display:none">简</p>
+                <p class="ani ani1" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="0s" style="display:none">历</p>
+                  
+                   <!--  <video src="movie.ogg" width='320' height='240' controls="controls"></video> --> 
+            </div>
+            <div class="swiper-slide">               
+               
+                <div class="flywrap">
+                    <div class="fly">
+                        
+                    </div>
+                
+                </div>  
+                <p class="anis">姓名：赵岩</p>
+                <p class="anis">年龄：24岁</p>
+                <p class="anis">寻找：web前端工作</p>
+            </div>
+            
+            <div class="swiper-slide">
+            
+                     <div class="box"><img src="images/my.png">
+                                    <button id="enter">查看详情</button>
+                     </div>
+                     
+                    
+              
+                    
+                
+              <!--   <div id="myStat" data-dimension="250" data-text="35%" data-info="New Clients" data-width="30" data-fontsize="38" data-percent="35" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div> -->
+                 
+            </div>
+        </div>
+
+    </div>
+
+<div id="mainContent">
+    <div id="header">
+    	
+ <span class="iconfont" id="scan" disabled="disabled">&#xe602;</span>
+    简历
+    <span class="iconfont" id="btns">&#xe628;</span>
+    </div>
+    
+    	
+    <div id="wrapper">
+        <div id="scroller">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="button" id="skill">
+        <span class="iconfont">&#xe613;</span>技能</div>
+        <div class="button" id="project">
+        <span class="iconfont">&#xe6d1;</span>作品</div>
+        <div class="button" id="work">
+        <span class="iconfont">&#xe6dc;</span>经历</div>
+        <div class="button" id="interest">
+        <span class="iconfont">&#xe600;</span>爱好</div>
+        <div class="button" id="myself">
+        <span class="iconfont">&#xe607;</span>关于我</div>
+    </div> 
+</div>
+<div class="saomiao" style="display: none;">
+    	<input type='button' onclick='startRecognize()' value='创建扫描控件' style="height:30px;"/>
+		<input type='button' onclick='startScan()' value='开始扫描' style="height:30px;"/>
+		<input type='button' onclick='cancelScan()' value='取消扫描' style="height:30px;"/>
+		<input type='button' onclick='setFlash()' value='开启闪光灯' style="height:30px;"/>
+		<div id= "bcid"></div>
+		<input type='text' id='text'/>
+</div> 
+
+<script type="text/javascript" src='js/index.js'></script>
+<script>
+
+			
+// 扩展API加载完毕后调用onPlusReady回调函数 
+	document.addEventListener( "plusready", onPlusReady, false );
+	// 扩展API加载完毕，现在可以正常调用扩展API
+	function onPlusReady() {		
+		var e = document.getElementById("scan");
+		e.removeAttribute( "disabled" );	
+	}
+	var scan = null;
+	function onmarked( type, result ) {
+		var text = '未知: ';
+		switch(type){
+			case plus.barcode.QR:
+			text = 'QR: ';
+			break;
+			case plus.barcode.EAN13:
+			text = 'EAN13: ';
+			break;
+			case plus.barcode.EAN8:
+			text = 'EAN8: ';
+			break;
+		}
+		alert( text+result );
+	}
+	function startRecognize() {
+		scan = new plus.barcode.Barcode('bcid');
+		scan.onmarked = onmarked; 
+	}
+	function startScan() {
+		scan.start();
+	}
+	function cancelScan() {
+		scan.cancel();
+	}
+	function setFlash() {
+		scan.setFlash();
+	}	
+
+		
+	
+</script>
+
+
+
+</body>
+
+</html>

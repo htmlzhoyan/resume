@@ -1,44 +1,34 @@
 ﻿[
 	{
+		"img":"images/1-skill.jpg",
 		"category":"规范",
-		"name":"HTML4、HTML5、ES5、ES6、CommonJS、CMD、AMD等",
-		"time":"1年",
-		"level":"了解"
+		"name":"熟悉HTML4、HTML5、ES5、ES6、CommonJS、CMD、AMD等"
+
 	},
 	{
+		"img":"images/2-skill.jpg",
 		"category":"框架",
-		"name":"Jquery、Zepto、AngularJs、Recat、Avalon等",
-		"time":"2年",
-		"level":"熟悉"
+		"name":"熟悉Jquery、Zepto、AngularJs、Recat、Avalon、Mui、Yo、Ionic等"
 	},
+	
 	{
-		"category":"框架",
-		"name":"Mui、Yo、Ionic等",
-		"time":"2年",
-		"level":"熟悉"
-	},
-	{
+		"img":"images/3-skill.jpg",
 		"category":"类库",
-		"name":"Swiper、Iscroll等",
-		"time":"2年",
-		"level":"熟悉"
+		"name":"熟悉Swiper、Iscroll、bootstrap、canvas等"
 	},
 	{
+		"img":"images/4-skill.jpg",
 		"category":"插件",
-		"name":"Jquery menu plugin、Jquery nav plugin、zepto emoji-expression-plugin等",
-		"time":"2年",
-		"level":"熟悉"
+		"name":"熟悉Jquery menu plugin、Jquery nav plugin、zepto emoji-expression-plugin等"
 	},
 	{
+		"img":"images/5-skill.jpg",
 		"category":"布局",
-		"name":"Fixed、Fulid、Flex、Responsive",
-		"time":"3年",
-		"level":"精通"
+		"name":"熟悉Fixed、Fulid、Flex、Responsive、pc流式布局、移动端响应式布局"
 	},
 	{
+		"img":"images/6-skill.jpg",
 		"category":"程序",
-		"name":"Javascript原生、Jquery及Zepto插件、AngularJs等",
-		"time":"3年",
-		"level":"精通"
+		"name":"熟悉Javascript原生、Jquery及Zepto插件、AngularJs等"
 	}
 ]
